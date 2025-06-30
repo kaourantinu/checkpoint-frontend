@@ -5,7 +5,7 @@ WORKDIR /app
 COPY package.json package.json
 # needed to get exactly the same packages versions as the host machine
 COPY package-lock.json package-lock.json
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # do not use this because it copies node_modules and may cause some incohrence between operating systems
 # COPY . .

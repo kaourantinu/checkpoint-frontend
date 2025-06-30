@@ -8,3 +8,8 @@ export type Country = {
   emoji: string
   name: string
 }
+
+export type Continent = {
+  id: string
+  name: string
+}

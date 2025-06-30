@@ -24,7 +24,7 @@ export default function CountryPage() {
                         <div className="flex flex items-center gap-4">
                             <span className="inline-block bg-neutral-200 text-neutral-800 text-sm px-3 py-1 [border-radius:8px]">{country.code}</span>
                             <span className="inline-block bg-neutral-200 text-neutral-800 text-sm px-3 py-1 [border-radius:8px]">{country.emoji}</span>
-                            <span className="inline-block bg-neutral-200 text-neutral-800 text-sm px-3 py-1 [border-radius:8px]">{country.continent.name}</span>
+                            {country.continent && <span className="inline-block bg-neutral-200 text-neutral-800 text-sm px-3 py-1 [border-radius:8px]">{country.continent.name}</span>}
                         </div>
                 </>
                 
